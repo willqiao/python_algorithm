@@ -7,9 +7,7 @@ from PyQt5.QtWidgets import *
 
 class MyWindow(QMainWindow):
     def __init__(self, *args):
-        print("test1")
-        super(MyWindow, self).__init__()
-        print("test2")
+        QMainWindow.__init__(self, *args)
         self.setGeometry(500, 200, 500, 500)
         self.setWindowTitle("This is my window")
 
